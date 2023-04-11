@@ -1,23 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import Certificate from './Certificate';
+import Certificate2 from './Certificate2';
 
 function App() {
+  const user = {
+    name: 'Name Last Name',
+    level: 'Lorem Ipsum',
+    date: "On Feb 27th 2023",
+    score: '80'
+  };
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Certificate user={user} />
     </div>
   );
 }
